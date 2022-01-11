@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.27.1
 // 	protoc        v3.19.1
-// source: passport1.proto
+// source: passport4.proto
 
 package passport1Pb
 
@@ -39,7 +39,7 @@ type Passport struct {
 func (x *Passport) Reset() {
 	*x = Passport{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_passport1_proto_msgTypes[0]
+		mi := &file_passport4_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -52,7 +52,7 @@ func (x *Passport) String() string {
 func (*Passport) ProtoMessage() {}
 
 func (x *Passport) ProtoReflect() protoreflect.Message {
-	mi := &file_passport1_proto_msgTypes[0]
+	mi := &file_passport4_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -65,7 +65,7 @@ func (x *Passport) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Passport.ProtoReflect.Descriptor instead.
 func (*Passport) Descriptor() ([]byte, []int) {
-	return file_passport1_proto_rawDescGZIP(), []int{0}
+	return file_passport4_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *Passport) GetDeviceInformation() *Passport_Device {
@@ -135,7 +135,7 @@ type Passport_Header struct {
 func (x *Passport_Header) Reset() {
 	*x = Passport_Header{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_passport1_proto_msgTypes[1]
+		mi := &file_passport4_proto_msgTypes[1]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -148,7 +148,7 @@ func (x *Passport_Header) String() string {
 func (*Passport_Header) ProtoMessage() {}
 
 func (x *Passport_Header) ProtoReflect() protoreflect.Message {
-	mi := &file_passport1_proto_msgTypes[1]
+	mi := &file_passport4_proto_msgTypes[1]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -161,7 +161,7 @@ func (x *Passport_Header) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Passport_Header.ProtoReflect.Descriptor instead.
 func (*Passport_Header) Descriptor() ([]byte, []int) {
-	return file_passport1_proto_rawDescGZIP(), []int{0, 0}
+	return file_passport4_proto_rawDescGZIP(), []int{0, 0}
 }
 
 func (x *Passport_Header) GetPassportProvider() string {
@@ -175,14 +175,12 @@ type Passport_Device struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
-
-	DeviceProvider string `protobuf:"bytes,1,opt,name=DeviceProvider,proto3" json:"DeviceProvider,omitempty"`
 }
 
 func (x *Passport_Device) Reset() {
 	*x = Passport_Device{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_passport1_proto_msgTypes[2]
+		mi := &file_passport4_proto_msgTypes[2]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -195,7 +193,7 @@ func (x *Passport_Device) String() string {
 func (*Passport_Device) ProtoMessage() {}
 
 func (x *Passport_Device) ProtoReflect() protoreflect.Message {
-	mi := &file_passport1_proto_msgTypes[2]
+	mi := &file_passport4_proto_msgTypes[2]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -208,24 +206,17 @@ func (x *Passport_Device) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Passport_Device.ProtoReflect.Descriptor instead.
 func (*Passport_Device) Descriptor() ([]byte, []int) {
-	return file_passport1_proto_rawDescGZIP(), []int{0, 1}
+	return file_passport4_proto_rawDescGZIP(), []int{0, 1}
 }
 
-func (x *Passport_Device) GetDeviceProvider() string {
-	if x != nil {
-		return x.DeviceProvider
-	}
-	return ""
-}
+var File_passport4_proto protoreflect.FileDescriptor
 
-var File_passport1_proto protoreflect.FileDescriptor
-
-var file_passport1_proto_rawDesc = []byte{
-	0x0a, 0x0f, 0x70, 0x61, 0x73, 0x73, 0x70, 0x6f, 0x72, 0x74, 0x31, 0x2e, 0x70, 0x72, 0x6f, 0x74,
+var file_passport4_proto_rawDesc = []byte{
+	0x0a, 0x0f, 0x70, 0x61, 0x73, 0x73, 0x70, 0x6f, 0x72, 0x74, 0x34, 0x2e, 0x70, 0x72, 0x6f, 0x74,
 	0x6f, 0x12, 0x11, 0x65, 0x78, 0x61, 0x6d, 0x70, 0x6c, 0x65, 0x2e, 0x70, 0x61, 0x73, 0x73, 0x70,
 	0x6f, 0x72, 0x74, 0x31, 0x1a, 0x1e, 0x67, 0x6f, 0x6f, 0x67, 0x6c, 0x65, 0x2f, 0x70, 0x72, 0x6f,
 	0x74, 0x6f, 0x62, 0x75, 0x66, 0x2f, 0x64, 0x75, 0x72, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0x2e, 0x70,
-	0x72, 0x6f, 0x74, 0x6f, 0x22, 0x89, 0x04, 0x0a, 0x08, 0x50, 0x61, 0x73, 0x73, 0x70, 0x6f, 0x72,
+	0x72, 0x6f, 0x74, 0x6f, 0x22, 0xe1, 0x03, 0x0a, 0x08, 0x50, 0x61, 0x73, 0x73, 0x70, 0x6f, 0x72,
 	0x74, 0x12, 0x50, 0x0a, 0x11, 0x44, 0x65, 0x76, 0x69, 0x63, 0x65, 0x49, 0x6e, 0x66, 0x6f, 0x72,
 	0x6d, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0x18, 0x01, 0x20, 0x01, 0x28, 0x0b, 0x32, 0x22, 0x2e, 0x65,
 	0x78, 0x61, 0x6d, 0x70, 0x6c, 0x65, 0x2e, 0x70, 0x61, 0x73, 0x73, 0x70, 0x6f, 0x72, 0x74, 0x31,
@@ -254,34 +245,32 @@ var file_passport1_proto_rawDesc = []byte{
 	0x6f, 0x6d, 0x65, 0x72, 0x43, 0x6f, 0x64, 0x65, 0x1a, 0x34, 0x0a, 0x06, 0x48, 0x65, 0x61, 0x64,
 	0x65, 0x72, 0x12, 0x2a, 0x0a, 0x10, 0x50, 0x61, 0x73, 0x73, 0x70, 0x6f, 0x72, 0x74, 0x50, 0x72,
 	0x6f, 0x76, 0x69, 0x64, 0x65, 0x72, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x10, 0x50, 0x61,
-	0x73, 0x73, 0x70, 0x6f, 0x72, 0x74, 0x50, 0x72, 0x6f, 0x76, 0x69, 0x64, 0x65, 0x72, 0x1a, 0x30,
-	0x0a, 0x06, 0x44, 0x65, 0x76, 0x69, 0x63, 0x65, 0x12, 0x26, 0x0a, 0x0e, 0x44, 0x65, 0x76, 0x69,
-	0x63, 0x65, 0x50, 0x72, 0x6f, 0x76, 0x69, 0x64, 0x65, 0x72, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09,
-	0x52, 0x0e, 0x44, 0x65, 0x76, 0x69, 0x63, 0x65, 0x50, 0x72, 0x6f, 0x76, 0x69, 0x64, 0x65, 0x72,
-	0x42, 0x0f, 0x5a, 0x0d, 0x2e, 0x2f, 0x70, 0x61, 0x73, 0x73, 0x70, 0x6f, 0x72, 0x74, 0x31, 0x50,
-	0x62, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
+	0x73, 0x73, 0x70, 0x6f, 0x72, 0x74, 0x50, 0x72, 0x6f, 0x76, 0x69, 0x64, 0x65, 0x72, 0x1a, 0x08,
+	0x0a, 0x06, 0x44, 0x65, 0x76, 0x69, 0x63, 0x65, 0x42, 0x0f, 0x5a, 0x0d, 0x2e, 0x2f, 0x70, 0x61,
+	0x73, 0x73, 0x70, 0x6f, 0x72, 0x74, 0x31, 0x50, 0x62, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f,
+	0x33,
 }
 
 var (
-	file_passport1_proto_rawDescOnce sync.Once
-	file_passport1_proto_rawDescData = file_passport1_proto_rawDesc
+	file_passport4_proto_rawDescOnce sync.Once
+	file_passport4_proto_rawDescData = file_passport4_proto_rawDesc
 )
 
-func file_passport1_proto_rawDescGZIP() []byte {
-	file_passport1_proto_rawDescOnce.Do(func() {
-		file_passport1_proto_rawDescData = protoimpl.X.CompressGZIP(file_passport1_proto_rawDescData)
+func file_passport4_proto_rawDescGZIP() []byte {
+	file_passport4_proto_rawDescOnce.Do(func() {
+		file_passport4_proto_rawDescData = protoimpl.X.CompressGZIP(file_passport4_proto_rawDescData)
 	})
-	return file_passport1_proto_rawDescData
+	return file_passport4_proto_rawDescData
 }
 
-var file_passport1_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
-var file_passport1_proto_goTypes = []interface{}{
+var file_passport4_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
+var file_passport4_proto_goTypes = []interface{}{
 	(*Passport)(nil),            // 0: example.passport1.Passport
 	(*Passport_Header)(nil),     // 1: example.passport1.Passport.Header
 	(*Passport_Device)(nil),     // 2: example.passport1.Passport.Device
 	(*durationpb.Duration)(nil), // 3: google.protobuf.Duration
 }
-var file_passport1_proto_depIdxs = []int32{
+var file_passport4_proto_depIdxs = []int32{
 	2, // 0: example.passport1.Passport.DeviceInformation:type_name -> example.passport1.Passport.Device
 	1, // 1: example.passport1.Passport.header:type_name -> example.passport1.Passport.Header
 	3, // 2: example.passport1.Passport.VirtualNowOffset:type_name -> google.protobuf.Duration
@@ -292,13 +281,13 @@ var file_passport1_proto_depIdxs = []int32{
 	0, // [0:3] is the sub-list for field type_name
 }
 
-func init() { file_passport1_proto_init() }
-func file_passport1_proto_init() {
-	if File_passport1_proto != nil {
+func init() { file_passport4_proto_init() }
+func file_passport4_proto_init() {
+	if File_passport4_proto != nil {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file_passport1_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_passport4_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Passport); i {
 			case 0:
 				return &v.state
@@ -310,7 +299,7 @@ func file_passport1_proto_init() {
 				return nil
 			}
 		}
-		file_passport1_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_passport4_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Passport_Header); i {
 			case 0:
 				return &v.state
@@ -322,7 +311,7 @@ func file_passport1_proto_init() {
 				return nil
 			}
 		}
-		file_passport1_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_passport4_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Passport_Device); i {
 			case 0:
 				return &v.state
@@ -339,18 +328,18 @@ func file_passport1_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_passport1_proto_rawDesc,
+			RawDescriptor: file_passport4_proto_rawDesc,
 			NumEnums:      0,
 			NumMessages:   3,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_passport1_proto_goTypes,
-		DependencyIndexes: file_passport1_proto_depIdxs,
-		MessageInfos:      file_passport1_proto_msgTypes,
+		GoTypes:           file_passport4_proto_goTypes,
+		DependencyIndexes: file_passport4_proto_depIdxs,
+		MessageInfos:      file_passport4_proto_msgTypes,
 	}.Build()
-	File_passport1_proto = out.File
-	file_passport1_proto_rawDesc = nil
-	file_passport1_proto_goTypes = nil
-	file_passport1_proto_depIdxs = nil
+	File_passport4_proto = out.File
+	file_passport4_proto_rawDesc = nil
+	file_passport4_proto_goTypes = nil
+	file_passport4_proto_depIdxs = nil
 }
