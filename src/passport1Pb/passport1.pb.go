@@ -4,7 +4,7 @@
 // 	protoc        v3.19.1
 // source: passport4.proto
 
-package passport1Pb
+package passport
 
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
